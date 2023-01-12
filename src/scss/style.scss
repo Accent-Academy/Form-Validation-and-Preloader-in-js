@@ -4,110 +4,11 @@
   padding: 0;
   outline: none;
 }
-body {
-  background-color: black;
-}
-
-form {
-  padding: 20px;
+#data {
   margin: 100px auto;
-  max-width: 600px;
-  background-color: white;
-  border-radius: 10px;
-  label {
-  }
-  input {
-    padding: 10px;
-    margin: 10px 0px;
-    border: none;
-    border: 1px solid gray;
-    border-radius: 4px;
+  img {
     width: 100%;
-  }
-  button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    gap: 30px;
-    color: white;
-    width: 100%;
-    border: none;
-    border-radius: 5px;
-    transition: 0.3s ease-in-out;
-    padding: 5px 0px;
-    border: 1px solid black;
-    &:hover {
-      background-color: white;
-      color: black;
-      border: none;
-      border: 1px solid black;
-    }
-    &:disabled {
-      background-color: rgba(128, 128, 128, 0.501);
-      color: black;
-      cursor: not-allowed;
-      border: none;
-      border: 1px solid transparent;
-    }
-    .spinner-border {
-      width: 20px;
-      height: 20px;
-    }
-  }
-}
-
-#name_validation,
-#surname_validation,
-#email_validation {
-  color: red;
-}
-#password_validation {
-}
-
-.strong_password {
-  width: 100%;
-  height: 3px;
-  background-color: green;
-  margin: 5px 0px;
-  transition: 1s ease-in-out;
-}
-.weak_password {
-  width: 33%;
-  height: 3px;
-  background-color: rgb(227, 12, 44);
-  margin: 5px 0px;
-  transition: 1s ease-in-out;
-}
-.medium_password {
-  width: 66%;
-  height: 3px;
-  background-color: rgb(128, 111, 0);
-  margin: 5px 0px;
-  transition: 1s ease-in-out;
-}
-
-#loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: white;
-  display: block;
-  z-index: 1;
-  #load_img {
-    max-width: 300px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    img {
-      width: 100px;
-      height: 100px;
-      object-fit: contain;
-    }
+    height: 300px;
+    object-fit: cover;
   }
 }

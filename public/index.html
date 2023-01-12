@@ -5,69 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="../src/scss/style.css" />
     <link
       rel="stylesheet"
       href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="../src/scss/style.css" />
   </head>
   <body>
-    <div id="loader">
-      <div id="load_img">
-        <img
-          src="https://media0.giphy.com/media/3oEjI6SIIHBdRxXI40/200w.gif?cid=6c09b952lmqv7d5br9oq0vjm9c1wz5w8y9t8bg8h8zokyxss&rid=200w.gif&ct=g"
-          alt=""
-        />
-      </div>
-    </div>
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-xl-6">
-          <form action="">
-            <label for="">Name</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              required
-              minlength="3"
-              maxlength="25"
-            />
-            <div id="name_validation"></div>
-            <label for="">Surname</label>
-            <input
-              type="text"
-              name="surname"
-              id="surname"
-              required
-              minlength="3"
-              maxlength="25"
-            />
-            <div id="surname_validation"></div>
-            <label for="">E-mail</label>
-            <input
-              type="email"
-              required
-              minlength="5"
-              id="email"
-              name="email"
-            />
-            <div id="email_validation"></div>
-            <label for="">password</label>
-            <input type="password" required name="password" id="password" />
-            <div id="password_validation"></div>
-            <button id="btns" type="submit">
-              <div id="load" role="status"></div>
-              Register
-            </button>
-          </form>
+    <main>
+      <section id="data">
+        <div class="container">
+          <div class="row get_data"></div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
 
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <script src="../src/js/main.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <script src="../src/js/app.js"></script>
   </body>
 </html>
